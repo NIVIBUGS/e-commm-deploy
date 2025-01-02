@@ -11,7 +11,7 @@ const App = () => {
   const [cart, setCart] = useState([])
   return (
     <div>
-    <Router>
+    <Router basename="/e-commm-deploy/">
       <Navbar cart={cart} setData={setData}/>
       <Routes>
       <Route path='/' element={<Product items={data}  cart={cart} setCart={setCart}/>}/>
